@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'fonts';
+@import 'variables';
+@import 'customStyles';
+
+@layer base {
+   body {
+      @apply font-proxima text-base text-black leading-5;
+   }
+
+   svg {
+      @apply flex items-center;
+   }
+}

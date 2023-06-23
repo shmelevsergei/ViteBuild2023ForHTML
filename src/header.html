@@ -1,0 +1,381 @@
+<header class="bg-light-gray-2 header">
+	<!-- header top -->
+	<div class="lg:rounded-b-lg headerShadow bg-white rounded-none flex items-center relative z-20">
+		<div class="container">
+			<div
+				class="w-full h-full flex justify-between items-center flex-wrap gap-x-[18px] md:flex-nowrap md:min-h-[56px] min-h-[60px]">
+				<!-- Burger -->
+				<button
+					class="w-6 h-6 py-[6px] px-[3px] flex flex-col justify-between js-menu-open shrink-0 lg:hidden lg:order-1">
+					<span class="w-[18px] h-[2px] bg-[#323844]"></span>
+					<span class="w-[18px] h-[2px] bg-[#323844]"></span>
+					<span class="w-[18px] h-[2px] bg-[#323844]"></span>
+				</button>
+				<!-- Logo -->
+				<a
+					href="/index.html"
+					class="flex items-center shrink-0 mr-auto gap-[3px] md:order-2 py-[18px] md:py-0">
+					<img
+						src="../src/assets/img/header/logo-img.svg"
+						alt="LASERWAR"
+						class="lg:w-[35px] lg:h-[30px] w-[18px] h-4" />
+					<img
+						src="../src/assets/img/header/logo-text.svg"
+						alt="LASERWAR"
+						class="lg:w-[122px] lg:h-3 object-contain w-[106px] h-[10px]" />
+				</a>
+				<!-- menu desktop -->
+				<div class="flex w-full justify-center order-4 md:order-3">
+					<nav class="hidden lg:block">
+						<load ="src/html/components/menu-desktop.html" />
+					</nav>
+
+					<!-- Search form -->
+					<div
+						class="flex w-full max-w-[756px] shrink-1 hidden js-search flex-col md:flex-row items-center gap-y-[10px] mt-[10px] md:mt-0 pb-[10px] md:pb-0">
+						<form
+							action=""
+							class="max-w-[756px] h-10 relative w-full border border-solid border-border px-4 pt-2 pb-[10px] bg-light-gray-2 formShadow rounded-lg">
+							<input
+								type="text"
+								placeholder="Поиск"
+								class="w-full h-full text-[14px] text-description bg-transparent outline-none" />
+							<button type="button" class="absolute right-4 top-2/4 -translate-y-2/4">
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 11.8487 17.3729 13.551 16.3199 14.9056L21.7071 20.2929L20.2929 21.7071L14.9056 16.3199C13.551 17.3729 11.8487 18 10 18ZM16 10C16 13.3137 13.3137 16 10 16C6.68629 16 4 13.3137 4 10C4 6.68629 6.68629 4 10 4C13.3137 4 16 6.68629 16 10Z"
+										fill="#888888" />
+								</svg>
+							</button>
+						</form>
+						<button type="button" class="ml-2 js-button-search-close">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12 12.7071L17.6465 18.3536L18.3536 17.6465L12.7071 12L18.3536 6.35359L17.6465 5.64648L12 11.2929L6.35359 5.64648L5.64648 6.35359L11.2929 12L5.64648 17.6465L6.35359 18.3536L12 12.7071Z"
+									fill="#333333" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<!-- Icons  -->
+				<ul class="flex gap-4 md:order-4">
+					<li>
+						<button type="submit" class="js-button-search-open">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1852_28138)">
+									<path
+										d="M10.1484 19.4398C15.2799 19.4398 19.4398 15.2799 19.4398 10.1484C19.4398 5.01685 15.2799 0.856934 10.1484 0.856934C5.01685 0.856934 0.856934 5.01685 0.856934 10.1484C0.856934 15.2799 5.01685 19.4398 10.1484 19.4398Z"
+										stroke="#333333"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M23.1424 23.1424L16.7139 16.7139"
+										stroke="#333333"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+								</g>
+								<defs>
+									<clipPath id="clip0_1852_28138">
+										<rect width="24" height="24" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</button>
+					</li>
+
+					<li class="relative cursor-pointer">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_1882_25764)">
+								<g clip-path="url(#clip1_1882_25764)">
+									<path
+										d="M7.11111 1H16.8889C19.5889 1 19.9444 2.22222 20.5556 4.66667L23 19.3333C23 23 23 23 19.3333 23H4.66667C1 23 1 23 1 19.3333L3.44444 4.66667C4.05556 2.22222 4.41105 1 7.11111 1ZM6.5 2.04762C5.27778 2.04762 4.14286 3.31664 4.14286 4.66667L2.04762 19.3333C2.04762 21.7778 2.22222 21.9524 4.66667 21.9524H19.3333C21.7778 21.9524 21.9524 21.7778 21.9524 19.3333L19.8571 4.66667C19.8571 3.31664 18.85 2.04762 17.5 2.04762H6.5ZM6.2381 5.71429C6.2381 5.03927 6.08689 4.66667 6.76191 4.66667C7.43692 4.66667 7.28571 5.03927 7.28571 5.71429V7.11111C7.28571 8.94444 10.65 9.55556 12 9.55556C13.35 9.55556 16.7143 9.55556 16.7143 7.11111V5.88889C16.7143 5.21387 16.5631 4.66667 17.2381 4.66667C17.9131 4.66667 17.7619 5.21387 17.7619 5.88889V7.11111C17.7619 9.81117 14.7001 10.4286 12 10.4286C9.29994 10.4286 6.2381 9.81117 6.2381 7.11111V5.71429Z"
+										fill="#333333" />
+								</g>
+							</g>
+							<defs>
+								<clipPath id="clip0_1882_25764">
+									<rect width="24" height="24" fill="white" />
+								</clipPath>
+								<clipPath id="clip1_1882_25764">
+									<rect width="24" height="24" fill="white" />
+								</clipPath>
+							</defs>
+						</svg>
+						<div
+							class="absolute w-[13px] h-[13px] rounded-full bg-red text-white text-[10px] font-bold flex items-center justify-center bottom-1 right-0">
+							1
+						</div>
+					</li>
+					<li class="relative js-menu-link">
+						<a href="!#" class="block js-color-link">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<mask id="path-1-inside-1_1928_37466" fill="white">
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M17 6.07045C17 3.2648 14.7667 1 12 1C9.23333 1 7 3.2648 7 6.07045C7 8.8761 9.23333 11.1409 12 11.1409C14.7667 11.1409 17 8.8761 17 6.07045ZM12 13.352C8.66667 13.352 2 15 2 23H12H22C22 15 15.3167 13.352 12 13.352Z" />
+								</mask>
+								<path
+									d="M2 23H1V24H2V23ZM22 23V24H23V23H22ZM12 2C14.2012 2 16 3.80385 16 6.07045H18C18 2.72576 15.3321 0 12 0V2ZM8 6.07045C8 3.80385 9.79876 2 12 2V0C8.6679 0 6 2.72576 6 6.07045H8ZM12 10.1409C9.79876 10.1409 8 8.33706 8 6.07045H6C6 9.41515 8.6679 12.1409 12 12.1409V10.1409ZM16 6.07045C16 8.33706 14.2012 10.1409 12 10.1409V12.1409C15.3321 12.1409 18 9.41515 18 6.07045H16ZM3 23C3 19.3303 4.50331 17.229 6.31104 16.0038C8.17808 14.7384 10.4618 14.352 12 14.352V12.352C10.2049 12.352 7.48859 12.7896 5.18896 14.3482C2.83002 15.947 1 18.6696 1 23H3ZM12 22H2V24H12V22ZM22 22H12V24H22V22ZM12 14.352C13.5294 14.352 15.8135 14.7382 17.6831 16.0041C19.4934 17.2298 21 19.3313 21 23H23C23 18.6686 21.165 15.9462 18.8044 14.348C16.5032 12.7898 13.7873 12.352 12 12.352V14.352Z"
+									fill="#333333"
+									mask="url(#path-1-inside-1_1928_37466)" />
+							</svg>
+						</a>
+						<ul
+							class="absolute py-4 px-5 rounded-lg bg-white w-max gap-[10px] flex-col shadowComponent -left-[155px] mt-[30px] js-menu-list">
+							<li class="flex items-center gap-2 group">
+								<div>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											class="group-hover:stroke-red transition-all"
+											d="M8.00007 5.14296C9.26243 5.14296 10.2858 4.11961 10.2858 2.85725C10.2858 1.59488 9.26243 0.571533 8.00007 0.571533C6.7377 0.571533 5.71436 1.59488 5.71436 2.85725C5.71436 4.11961 6.7377 5.14296 8.00007 5.14296Z"
+											stroke="#AAA9A9"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											class="group-hover:stroke-red transition-all"
+											d="M12 9.14307C12 8.0822 11.5786 7.06479 10.8284 6.31464C10.0783 5.56449 9.06087 5.14307 8 5.14307C6.93913 5.14307 5.92172 5.56449 5.17157 6.31464C4.42143 7.06479 4 8.0822 4 9.14307V10.8574H5.71429L6.28571 15.4288H9.71429L10.2857 10.8574H12V9.14307Z"
+											stroke="#AAA9A9"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</div>
+								<a href="#!" class="group-hover:text-red transition-colors">Мой профиль</a>
+							</li>
+							<li class="flex items-center gap-2 group">
+								<div>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											class="group-hover:stroke-red transition-all"
+											d="M15 7.5H11V5H13.6615C13.7614 5 13.8591 5.02994 13.9418 5.08597C14.0245 5.14199 14.0886 5.22152 14.1257 5.3143L15 7.5Z"
+											stroke="#888888"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											class="group-hover:stroke-red transition-all"
+											d="M1 9H11"
+											stroke="#888888"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											class="group-hover:stroke-red transition-all"
+											d="M11.75 13.5C12.5784 13.5 13.25 12.8284 13.25 12C13.25 11.1716 12.5784 10.5 11.75 10.5C10.9216 10.5 10.25 11.1716 10.25 12C10.25 12.8284 10.9216 13.5 11.75 13.5Z"
+											stroke="#888888"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											class="group-hover:stroke-red transition-all"
+											d="M4.25 13.5C5.07843 13.5 5.75 12.8284 5.75 12C5.75 11.1716 5.07843 10.5 4.25 10.5C3.42157 10.5 2.75 11.1716 2.75 12C2.75 12.8284 3.42157 13.5 4.25 13.5Z"
+											stroke="#888888"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											class="group-hover:stroke-red transition-all"
+											d="M10.25 12H5.75"
+											stroke="#888888"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											class="group-hover:stroke-red transition-all"
+											d="M2.75 12H1.5C1.36739 12 1.24021 11.9473 1.14645 11.8536C1.05268 11.7598 1 11.6326 1 11.5V4.5C1 4.36739 1.05268 4.24021 1.14645 4.14645C1.24021 4.05268 1.36739 4 1.5 4H11V10.7009"
+											stroke="#888888"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											class="group-hover:stroke-red transition-all"
+											d="M11 10.7009V7.5H15V11.5C15 11.6326 14.9473 11.7598 14.8536 11.8536C14.7598 11.9473 14.6326 12 14.5 12H13.25"
+											stroke="#888888"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</div>
+								<a href="#!" class="group-hover:text-red transition-colors">Адрес доставки</a>
+							</li>
+							<li class="flex items-center gap-2 group">
+								<div>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_1940_43634)">
+											<path
+												class="group-hover:stroke-red transition-all"
+												d="M12.5714 3.42871H7.4285C6.79732 3.42871 6.28564 3.94039 6.28564 4.57157V9.71443C6.28564 10.3456 6.79732 10.8573 7.4285 10.8573H12.5714C13.2025 10.8573 13.7142 10.3456 13.7142 9.71443V4.57157C13.7142 3.94039 13.2025 3.42871 12.5714 3.42871Z"
+												stroke="#888888"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												class="group-hover:stroke-red transition-all"
+												d="M4.57129 13.7139H13.2684C13.5682 13.7151 13.8556 13.8342 14.0684 14.0453L15.4284 15.4282"
+												stroke="#888888"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												class="group-hover:stroke-red transition-all"
+												d="M0.571289 0.571289H1.71415C2.01725 0.571289 2.30794 0.691697 2.52227 0.906024C2.7366 1.12035 2.857 1.41104 2.857 1.71415V11.4284"
+												stroke="#888888"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												class="group-hover:stroke-red transition-all"
+												d="M4.57113 13.4287C4.57677 13.5239 4.57677 13.6193 4.57113 13.7144C4.53413 14.2281 4.29927 14.7074 3.91599 15.0515C3.53271 15.3955 3.03091 15.5774 2.51622 15.5589C2.00152 15.5404 1.51409 15.3229 1.15651 14.9522C0.798939 14.5815 0.599121 14.0866 0.599121 13.5716C0.599121 13.0566 0.798939 12.5616 1.15651 12.1909C1.51409 11.8203 2.00152 11.6028 2.51622 11.5843C3.03091 11.5658 3.53271 11.7477 3.91599 12.0917C4.29927 12.4357 4.53413 12.915 4.57113 13.4287V13.4287Z"
+												stroke="#888888"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												class="group-hover:stroke-red transition-all"
+												d="M9.71436 8H10.8572"
+												stroke="#888888"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+										</g>
+										<defs>
+											<clipPath id="clip0_1940_43634">
+												<rect width="16" height="16" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<a href="#!" class="group-hover:text-red transition-colors">Мои заказы</a>
+							</li>
+							<li class="flex items-center gap-2 group">
+								<div>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											class="group-hover:stroke-red transition-all"
+											d="M1.71436 6.33105H14.2858V14.3311C14.2858 14.6342 14.1654 14.9248 13.951 15.1392C13.7367 15.3535 13.446 15.4739 13.1429 15.4739H2.85721C2.55411 15.4739 2.26342 15.3535 2.04909 15.1392C1.83476 14.9248 1.71436 14.6342 1.71436 14.3311V6.33105V6.33105Z"
+											stroke="#888888"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											class="group-hover:stroke-red transition-all"
+											d="M15.4282 5.18834V2.90262C15.4282 2.27144 14.9165 1.75977 14.2854 1.75977L1.71394 1.75977C1.08275 1.75977 0.571079 2.27144 0.571079 2.90262V5.18834C0.571079 5.81952 1.08275 6.33119 1.71394 6.33119L14.2854 6.33119C14.9165 6.33119 15.4282 5.81952 15.4282 5.18834Z"
+											stroke="#888888"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											class="group-hover:stroke-red transition-all"
+											d="M6.28564 9.75977H9.71422"
+											stroke="#888888"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</div>
+								<a href="#!" class="group-hover:text-red transition-colors">Избранное</a>
+							</li>
+							<li class="flex items-center gap-2 group">
+								<div>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_1940_43640)">
+											<path
+												class="group-hover:stroke-red transition-all"
+												d="M10.857 11.9999V14.2856C10.857 14.5887 10.7366 14.8794 10.5223 15.0937C10.3079 15.308 10.0173 15.4284 9.71415 15.4284H1.71415C1.41104 15.4284 1.12035 15.308 0.906024 15.0937C0.691697 14.8794 0.571289 14.5887 0.571289 14.2856V1.71415C0.571289 1.41104 0.691697 1.12035 0.906024 0.906024C1.12035 0.691697 1.41104 0.571289 1.71415 0.571289H9.71415C10.0173 0.571289 10.3079 0.691697 10.5223 0.906024C10.7366 1.12035 10.857 1.41104 10.857 1.71415V3.99986"
+												stroke="#888888"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												class="group-hover:stroke-red transition-all"
+												d="M7.42822 8H15.4282"
+												stroke="#888888"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												class="group-hover:stroke-red transition-all"
+												d="M13.1426 5.71387L15.4283 7.99958L13.1426 10.2853"
+												stroke="#888888"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+										</g>
+										<defs>
+											<clipPath id="clip0_1940_43640">
+												<rect width="16" height="16" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<a href="#!" class="group-hover:text-red transition-colors">Выйти</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Menu mobile -->
+	<div
+		class="absolute top-0 left-0 right-0 h-[100vh] bg-white z-10 flex justify-between flex-col items-center pt-[60px] -translate-y-[150%] transition-all duration-300 js-menu-mobile-block">
+		<load ="src/html/components/menu-mobile.html" />
+		<button
+			type="button"
+			class="w-full py-[10px] flex justify-center bg-white buttonCloseMenuShadow js-menu-close">
+			<svg
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M12 12.7071L17.6465 18.3536L18.3536 17.6465L12.7071 12L18.3536 6.35359L17.6465 5.64648L12 11.2929L6.35359 5.64648L5.64648 6.35359L11.2929 12L5.64648 17.6465L6.35359 18.3536L12 12.7071Z"
+					fill="#333333" />
+			</svg>
+		</button>
+	</div>
+	<!-- Header bottom -->
+	<div class="py-[9px] text-center js-header-bottom">
+		<div class="container">
+			<p class="select-none lg:text-[14px]">
+				<span class="text-red">При покупке </span>При покупке 10 игровых комплектов LASERWAR — 2
+				игровых комплекта <span class="text-red">в подарок</span>
+			</p>
+		</div>
+	</div>
+</header>

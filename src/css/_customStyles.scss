@@ -1,0 +1,46 @@
+.activeMenu {
+   color: $red;
+   font-weight: 600;
+
+   svg {
+      path {
+         stroke: $red;
+      }
+   }
+}
+
+.formShadow {
+   box-shadow: inset 3px 3px 1.6px rgba(174, 174, 192, 0.3), inset -2px -2px 2px 2px #FFFFFF;
+}
+
+.headerShadow {
+   box-shadow: 3px 3px 8px 1px rgba(174, 174, 192, 0.2);
+}
+
+.shadowComponent {
+   box-shadow: 2px 4px 5px 1px rgba(174, 174, 192, 0.25);
+}
+
+.buttonCloseMenuShadow {
+   box-shadow: 3px -3px 8px 1px rgba(174, 174, 192, 0.20);
+}
+
+.menuMobileLinkOpen {
+   color: $red;
+   font-weight: 600;
+   line-height: 20px;
+
+   span {
+      transform: rotate(180deg);
+
+      path {
+         fill: $red;
+      }
+   }
+}
+
+.menuFooterShow {
+   svg {
+      transform: rotate(180deg);
+   }
+}
